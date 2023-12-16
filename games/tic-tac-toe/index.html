@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Tic-Tac-Toe</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-zinc-900 min-h-screen w-full flex flex-col items-center justify-center ">
+    <div class="container mx-auto flex items-center justify-center gap-10 text-white font-bold relative">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full bg-white" id="status-player-1"></div>
+            <p>Player 1 - Circle</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full" id="status-player-2"></div>
+            <p>Player 2 - Cross</p>
+        </div>
+    </div>
+    <div class="w-96 h-96 bg-zinc-200 rounded p-4 flex flex-wrap items-center justify-center" id="box-game"></div>
+    <button class="text-white text-center pt-2 hidden" id="resetButton" onclick="game.reset()">Reset</button>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+</html>
