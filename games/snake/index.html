@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black min-h-screen w-full grid place-items-center">
+    <div class="flex flex-col gap-3 ">
+        <div class="flex gap-5 items-center justify-center text-white uppercase hidden"  id="game-over">
+            <h2 class="font-bold text-2xl ">Game Over</h2>
+        </div>
+        <h1 class="text-white flex items-center w-full justify-center gap-5 text-xl uppercase">Points: <b id="points">0</b></h1>
+        <div class="flex gap-5 text-white items-center justify-center" id="difficulties">
+            <button class="border border-white px-2 py-1 rounded-full outline-0" id="easy" onclick="setDifficulty('easy')">Easy</button> 
+            <button class="border border-white px-2 py-1 rounded-full outline-0" id="medium" onclick="setDifficulty('medium')">Medium</button> 
+            <button class="border border-white px-2 py-1 rounded-full outline-0" id="hard" onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        <canvas id="game" class="bg-zinc-600 rounded border border-white"></canvas>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>

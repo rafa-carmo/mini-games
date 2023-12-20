@@ -39,7 +39,7 @@ class Game {
         players[1].setTurn(true)
         players[2].setTurn(false)
         this.draw()
-        console.log(document.getElementById("resetButton").classList)
+        
         document.getElementById("resetButton").classList.toggle('hidden')
     }
 }
@@ -180,7 +180,7 @@ function hasWinner()
         }
     })
     if(game.items.filter((item) => item.type !== '').length === 9) {
-        geme.setWinner('Draw')
+        game.setWinner('Draw')
     }
 }
 
